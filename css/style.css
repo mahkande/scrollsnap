@@ -1,0 +1,76 @@
+main {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100vw);
+  grid-template-columns: repeat(6, 100vw);
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+}
+
+main article {
+  min-height: 100vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 60px;
+  scroll-snap-align: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+main article:nth-child(1) div {
+  background-color: #b2d2ea;
+}
+
+main article:nth-child(2) div {
+  background-color: #89a924;
+}
+
+main article:nth-child(3) div {
+  background-color: #0b7744;
+}
+
+main article:nth-child(4) div {
+  background-color: #c5a30b;
+}
+
+main article div {
+  min-height: 100vh;
+  width: 100%;
+  background: #444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+main article:nth-child(5) div {
+  background-color: #90ccb9;
+}
+
+main article:nth-child(6) div {
+  background-color: #b7a7b6;
+}
